@@ -1,0 +1,16 @@
+type Mutation {
+    mutateRuleRequest(ruleRequestType: ruleRequestType!): String!
+}
+
+input ruleRequestType {
+    key: String!
+    processId: String!
+    application: String!
+    domain: String!
+    dqCd: String!
+    name: String!
+    typeCd: String!
+    ruleClass: String!
+    reqDescription: String!
+    isActive: String = "TRUE"
+}
